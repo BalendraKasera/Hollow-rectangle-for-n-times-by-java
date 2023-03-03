@@ -1,0 +1,27 @@
+import java.util.*;
+
+public class HollowRectangle {
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+
+        int lastRow = sc.nextInt();
+
+        int lastcol = sc.nextInt();
+        // outer
+        for (int i = 1; i <= lastRow; i++) {
+            // inner
+            for (int j = 1; j <= lastcol; j++) {
+                if (i == 1 || j == 1 || i == lastRow || j == lastcol) {
+                    System.out.print("*");
+                } else {
+                    System.out.print(" ");
+                }
+
+            }
+            System.out.println();
+
+        }
+
+    }
+
+}
